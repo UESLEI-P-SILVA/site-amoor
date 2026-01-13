@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para o Amor da Minha Vida ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Corações animados */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-110vh); }
+}
+
+/* Carta */
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Botão */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d6d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff1e4d;
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Timeline */
+.timeline {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+    border-left: 3px solid rgba(255,255,255,0.4);
+    padding-left: 20px;
+}
+
+.event {
+    background: rgba(255,255,255,0.15);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.event::before {
+    content: "❤️";
+    position: absolute;
+    left: -32px;
+    top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Música -->
+<audio autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<section>
+    <h1>❤️ Para o Amor da Minha Vida ❤️</h1>
+    <p>Esse site é uma pequena prova de um amor que é infinito.</p>
+</section>
+
+<section class="card">
+    <h2>💌 Minha Carta Para Você</h2>
+    <p>
+        Meu amor,<br><br>
+        A gente já passou por algumas coisas até aqui, alguns desafios, momentos confusos, aprendizados… e mesmo assim, a gente continua aqui.  
+        Eu não acredito em relacionamento perfeito, acredito em pessoas que escolhem crescer juntas.  
+        Eu escolho você todos os dias, inclusive quando não é fácil.<br><br>
+
+        Quero aprender com você, amadurecer ao seu lado, construir algo leve, verdadeiro e cheio de carinho.  
+        Quero estar presente nos dias bons e ter maturidade nos dias difíceis.<br><br>
+
+        Você é especial pra mim. E meu desejo é seguir caminhando com você. 🤍  
+        Eu te amo mais do que palavras conseguem explicar. ❤️
+    </p>
+</section>
+
+<section>
+    <h2>⏳ Nosso Tempo Juntos</h2>
+    <p id="timer"></p>
+</section>
+
+<section>
+    <h2>📸 Nossos Momentos</h2>
+    <div class="gallery">
+        <img src="foto1.jpeg">
+        <img src="foto2.jpeg">
+        <img src="foto3.jpeg">
+        <img src="foto4.jpeg">
+    </div>
+</section>
+
+<section>
+    <h2>📖 Nossa História</h2>
+    <div class="timeline">
+
+        <div class="event">
+            💑 <strong>Primeiro encontro</strong><br>
+            A primeira vez que te vi, eu não imaginei que algo pudesse surgir.
+            Por um achismo errado meu, mantive distância.
+            A gente se viu na igreja, mas não trocamos nenhuma palavra.<br><br>
+
+            Um tempo depois, em um evento organizado pelo líder de jovens,
+            conversamos de verdade, jogamos UNO juntos e algo mudou dentro de mim.
+            Foi ali que o interesse começou.
+        </div>
+
+        <div class="event">
+            💋 <strong>Primeiro beijo</strong><br>
+            Não foi planejado. Foi desejo.
+            Durante um congresso, tarde da noite, nos afastamos e ficamos em um canto mais escuro.
+            Ali trocamos nossos primeiros selinhos, intensos e cheios de vontade.<br><br>
+
+            O beijo de verdade veio depois, no sofá da sua casa.
+            Marcante, gostoso, inesquecível.
+            Até hoje a gente brinca que criou uma abstinência —
+            um vício no beijo um do outro.
+        </div>
+
+        <div class="event">
+            🌱 <strong>Nossos desafios</strong><br>
+            Nem tudo foi simples.
+            Tivemos aprendizados, ajustes e momentos difíceis,
+            mas escolhemos continuar.
+            Cada desafio nos ensinou a cuidar mais um do outro.
+        </div>
+
+        <div class="event">
+            ❤️ <strong>Hoje</strong><br>
+            Estamos aqui, crescendo juntos e escolhendo um ao outro todos os dias.
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <button onclick="surpresa()">Clica aqui se acredita em nós 💖</button>
+    <p id="surpresa"></p>
+</section>
+
+<script>
+// DATA DO INÍCIO DO NAMORO
+const inicio = new Date("2025-11-08 00:00:00");
+
+function atualizarTempo() {
+    const agora = new Date();
+    const diff = agora - inicio;
+
+    const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diff / (1000 * 60)) % 60);
+    const segundos = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("timer").innerHTML =
+        `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos ❤️`;
+}
+setInterval(atualizarTempo, 1000);
+atualizarTempo();
+
+// Surpresa masculina e madura
+let etapa = 0;
+
+function surpresa() {
+    document.getElementById("surpresa").innerHTML =
+        "Eu não estou aqui só por sentimento. Estou por escolha. Eu cuido, eu permaneço e eu assumo. Gosto de você, me importo com você e sigo aqui porque quero caminhar ao seu lado.";
+}
+
+
+
+// Corações flutuando
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}, 300);
+</script>
+
+</body>
+</html>
